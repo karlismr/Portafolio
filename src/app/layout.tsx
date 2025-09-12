@@ -10,8 +10,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  // Cuando tenga el dominio de vercel
-  metadataBase: new URL("https://tudominio.com"),
+  metadataBase: new URL("https://https://portafolioweb-sandy.vercel.app/"),
   title: {
     default: "Karlis Maldonado — Portafolio",
     template: "%s · Karlis Maldonado",
@@ -63,7 +62,7 @@ export const viewport: Viewport = {
 
 function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/10">
+    <footer className="mt-auto border-t border-white/10">
       <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-neutral-400">
         © {new Date().getFullYear()} Karlis Maldonado — hecho con Next.js +
         Tailwind
@@ -80,7 +79,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh bg-black text-white overflow-x-clip`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh bg-black text-white overflow-x-clip flex flex-col`}
       >
         <div className="pointer-events-none fixed inset-0 -z-10">
           <div

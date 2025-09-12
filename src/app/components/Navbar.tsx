@@ -22,9 +22,6 @@ export default function Navbar() {
           <Link href="/about" className="hover:text-pink-300">
             Sobre mí
           </Link>
-          <Link href="/projects" className="hover:text-pink-300">
-            Proyectos
-          </Link>
           <Link href="/contact" className="hover:text-pink-300">
             Contacto
           </Link>
