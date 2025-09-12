@@ -11,7 +11,7 @@ export default function HomePage() {
             especializada en <span className="text-pink-300">React</span>,{" "}
             <span className="text-pink-300">Next.js</span> y{" "}
             <span className="text-pink-300">TypeScript</span>. Me encanta crear
-            UIs limpias, rápidas y accesibles.
+            UIs limpias, rápidas y accesibleeeeeeeeeeeeees.
           </p>
         </div>
       </section>
