@@ -3,8 +3,10 @@ import Image from "next/image";
 export default function ContactPage() {
   return (
     <section className="py-12 md:py-16" id="contacto">
-      <h2 className="text-3xl md:text-4xl font-semibold">Contacto</h2>
-      <p className="mt-2 text-neutral-300">
+      <h2 className="text-3xl md:text-4xl font-semibold text-center">
+        Contacto
+      </h2>
+      <p className="mt-2 text-neutral-300 text-center max-w-2xl mx-auto">
         ¿Te interesa colaborar? ¡Hablemos!
       </p>
 
@@ -14,7 +16,7 @@ export default function ContactPage() {
             {/* FOTO */}
             <div className="relative h-32 w-32 overflow-hidden rounded-full ring-1 ring-white/20">
               <Image
-                src="/karlis.jpeg"
+                src="/yooo.jpeg"
                 alt="Foto de Karlis Maldonado"
                 fill
                 sizes="128px"
@@ -31,7 +33,7 @@ export default function ContactPage() {
             </div>
 
             {/* LINKS */}
-            <div className="mt-2 grid w-full grid-cols-1 gap-3 sm:grid-cols-3">
+            <div className="mt-2 grid w-full grid-cols-1 gap-3 sm:grid-cols-2">
               <a
                 href="mailto:karlisamaldonador@gmail.com"
                 className="group flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 hover:bg-white/10 transition"
@@ -62,28 +64,6 @@ export default function ContactPage() {
                   />
                 </svg>
                 <span className="group-hover:text-pink-300">GitHub</span>
-              </a>
-
-              <a
-                href="https://wa.me/+56934847101?text=Hola%20Karlis%2C%20vi%20tu%20portafolio%20%F0%9F%91%8B"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 hover:bg-white/10 transition"
-                aria-label="Enviar WhatsApp"
-              >
-                <svg viewBox="0 0 24 24" className="h-5 w-5">
-                  <path
-                    d="M20.5 11.8a8.5 8.5 0 0 1-12.91 7.19L4 20l1.05-3.5A8.5 8.5 0 1 1 20.5 11.8Z"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                  />
-                  <path
-                    d="M8.5 9.8c.1 2.9 3.1 5.4 5.9 5.7.5.1 1.2-.2 1.4-.7l.3-.8c.1-.3 0-.5-.3-.7l-1-.4c-.3-.1-.6 0-.7.2l-.3.4c-.1.2-.3.2-.5.1-1.1-.5-2-1.4-2.5-2.5-.1-.2 0-.4.1-.5l.4-.3c.2-.1.3-.4.2-.7l-.4-1c-.2-.3-.4-.4-.7-.3l-.8.3c-.5.2-.8.9-.7 1.4Z"
-                    fill="currentColor"
-                  />
-                </svg>
-                <span className="group-hover:text-pink-300">WhatsApp</span>
               </a>
             </div>
           </div>

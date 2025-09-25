@@ -25,6 +25,14 @@ export default function Navbar() {
           <Link href="/contact" className="hover:text-pink-300">
             Contacto
           </Link>
+          <a
+            href="https://github.com/karlismr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-300"
+          >
+            GitHub
+          </a>
         </div>
 
         {/* Botón hamburguesa (📱) */}
