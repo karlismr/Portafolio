@@ -16,17 +16,17 @@ export default function PortafolioPage() {
   const clips: Clip[] = [
     {
       id: "portafolio-inicio",
-      title: "Inicio y semántica accesible",
+      title: "Arquitectura.",
       summary:
-        "Estructura con main/header/section, tipografía y contenedores; foco visible y navegación de teclado.",
+        "Next.js + TS + Tailwind; componentes reutilizables, rutas anidadas y fondo animado optimizado.",
       src: "/videos/portafolio-inicio.mp4",
       poster: "/videos/portafolio-inicio.jpg",
     },
     {
-      id: "portafolio-animaciones",
-      title: "Microinteracciones y rendimiento",
+      id: "portafolio-videosyux",
+      title: "Videos MP4 + UX accesible.",
       summary:
-        "Animaciones sutiles, uso de `will-change`, tamaños de imagen con next/image y lazy para LCP.",
+        "MP4 con metadata+poster, inline en móvil, grid responsive y foco visible.",
       src: "/videos/portafolio-animaciones.mp4",
       poster: "/videos/portafolio-animaciones.jpg",
     },
@@ -65,7 +65,7 @@ function ClipsSection({ clips }: { clips: Clip[] }) {
         técnicas.
       </p>
 
-      <div className="mt-6 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+      <div className="mt-6 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(420px,1fr))]">
         {clips.map((clip) => (
           <article
             key={clip.id}

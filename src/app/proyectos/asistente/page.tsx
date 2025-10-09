@@ -65,7 +65,7 @@ function ClipsSection({ clips }: { clips: Clip[] }) {
         implementación.
       </p>
 
-      <div className="mt-6 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+      <div className="mt-6 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(420px,1fr))]">
         {clips.map((clip) => (
           <article
             key={clip.id}

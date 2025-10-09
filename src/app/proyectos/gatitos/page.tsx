@@ -16,26 +16,34 @@ export default function GatitosPage() {
   const clips: Clip[] = [
     {
       id: "gatitos-arquitectura",
-      title: "Arquitectura del proyecto",
+      title: "Arquitectura & Stack",
       summary:
-        "Estructura con App Router, organización por features y patrones de componentes reutilizables.",
-      src: "/videos/gatitos-arquitectura.mp4",
+        "Next.js App Router + TypeScript + Tailwind. Server/Client Components y routing anidado. Deploy en Vercel con previews → rendimiento y reutilización.",
+      src: "../VideoKarlis1.mp4",
       poster: "/videos/gatitos-arquitectura.jpg",
     },
     {
       id: "gatitos-api",
-      title: "API: /api/cats y ‘adoptado’",
+      title: "Datos: API Routes + MongoDB + SWR",
       summary:
-        "Endpoints REST, esquema del modelo Mongoose y toggle del estado de adopción con validaciones.",
-      src: "/videos/gatitos-api.mp4",
+        "La UI consume API Routes sobre MongoDB (modelo Cat). SWR maneja caché/revalidación/hidratación para sincronía sin bloquear la interfaz.",
+      src: "../VideoKarlis2.mp4",
       poster: "/videos/gatitos-api.jpg",
     },
     {
       id: "gatitos-ui",
-      title: "UI/UX: Cards y formularios",
+      title: "Interacción: Form controlado + Optimistic UI.",
       summary:
-        "Diseño dark + pink, accesibilidad en formularios y feedback de estado (loading/success).",
-      src: "/videos/gatitos-ui.mp4",
+        "Formulario controlado con validaciones. Al adoptar, uso Optimistic UI con SWR mutate: feedback inmediato y luego confirmación del servidor.",
+      src: "../VideoKarlis3.mp4",
+      poster: "/videos/gatitos-ui.jpg",
+    },
+    {
+      id: "gatitos-seguridadyroles",
+      title: "Seguridad & Roles: NextAuth + UI basada en permisos.",
+      summary:
+        "Autenticación con NextAuth (JWT) y roles. Rutas y componentes se muestran/ocultan según permisos → autorización coherente en el cliente.",
+      src: "../VideoKarlis4.mp4",
       poster: "/videos/gatitos-ui.jpg",
     },
   ];
@@ -73,7 +81,7 @@ function ClipsSection({ clips }: { clips: Clip[] }) {
         implementación.
       </p>
 
-      <div className="mt-6 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(280px,1fr))]">
+      <div className="mt-6 grid gap-6 [grid-template-columns:repeat(auto-fit,minmax(420px,1fr))]">
         {clips.map((clip) => (
           <article
             key={clip.id}
