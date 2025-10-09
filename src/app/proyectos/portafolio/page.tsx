@@ -20,7 +20,7 @@ export default function PortafolioPage() {
       summary:
         "Next.js + TS + Tailwind; componentes reutilizables, rutas anidadas y fondo animado optimizado.",
       src: "/videos/portafolio-inicio.mp4",
-      poster: "/videos/portafolio-inicio.jpg",
+      poster: "../capportafolio1.jpeg",
     },
     {
       id: "portafolio-videosyux",
@@ -28,7 +28,7 @@ export default function PortafolioPage() {
       summary:
         "MP4 con metadata+poster, inline en móvil, grid responsive y foco visible.",
       src: "/videos/portafolio-animaciones.mp4",
-      poster: "/videos/portafolio-animaciones.jpg",
+      poster: "../capportafolio2.jpeg",
     },
   ];
 
