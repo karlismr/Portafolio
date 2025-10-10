@@ -19,7 +19,7 @@ export default function PortafolioPage() {
       title: "Arquitectura.",
       summary:
         "Next.js + TS + Tailwind; componentes reutilizables, rutas anidadas y fondo animado optimizado.",
-      src: "/videos/portafolio-inicio.mp4",
+      src: "../Video1KarlisArquitectura.mp4",
       poster: "../capportafolio1.jpeg",
     },
     {
@@ -27,7 +27,7 @@ export default function PortafolioPage() {
       title: "Videos MP4 + UX accesible.",
       summary:
         "MP4 con metadata+poster, inline en móvil, grid responsive y foco visible.",
-      src: "/videos/portafolio-animaciones.mp4",
+      src: "../Video2KarlisUX.mp4",
       poster: "../capportafolio2.jpeg",
     },
   ];
