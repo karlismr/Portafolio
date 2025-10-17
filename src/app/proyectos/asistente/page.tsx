@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Asistente personal — (En curso)",
   description:
-    "Asistente tipo chat con notas, tareas, recordatorios y memoria conversacional. PWA con Next.js + backend en Python (Django/FastAPI).",
+    "Asistente tipo chat con notas, tareas, recordatorios y memoria conversacional. Python (Django/FastAPI).",
 };
 
 type Clip = {
@@ -43,8 +43,21 @@ export default function AsistentePage() {
           <h1 className="text-2xl md:text-3xl font-bold">Asistente personal</h1>
           <p className="max-w-3xl text-neutral-300">
             PWA estilo chat: notas, tareas y recordatorios con memoria
-            persistente y tono configurable. Frontend con Next.js 15 + Tailwind;
-            backend en Python (Django/FastAPI) y MongoDB.
+            persistente y tono configurable. Frontend y backend con
+            Python/Django.
+          </p>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-300">
+            Quiero crear un{" "}
+            <strong>asistente tipo chat (estilo WhatsApp)</strong> donde puedas
+            elegir con quién “hablas” (p. ej., <strong>familiar</strong> o{" "}
+            <strong>novia</strong>) y que te haga
+            <strong> recordatorios</strong>, te dé <strong>seguimiento</strong>{" "}
+            y verifique que cumpliste lo que dijiste (tareas, salidas, citas).
+            Con este proyecto busco profundizar en <strong>Django</strong> y
+            aprender <strong>IA aplicada</strong>: <em>NLP básico</em> para
+            detectar intención, extraer fechas/horas, ajustar el{" "}
+            <em>tono/persona</em> de la respuesta y priorizar recordatorios de
+            forma inteligente.
           </p>
         </header>
 

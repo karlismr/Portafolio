@@ -46,6 +46,21 @@ export default function PortafolioPage() {
             reutilizables. Enfoque en semántica, accesibilidad y performance con
             Next.js.
           </p>
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-300">
+            Proyecto de <strong>portafolio</strong> que <strong>explica</strong>{" "}
+            mis decisiones técnicas con
+            <strong> videos MP4 locales</strong>. Grilla de cards 16:9 (poster,
+            controles, tags) en
+            <strong> Next.js + Tailwind</strong> con estética dark/fucsia.
+            Aprendí
+            <strong> optimización de video</strong> (preload/metadata, posters
+            ligeros),
+            <strong> SEO básico</strong>, accesibilidad y responsive.
+          </p>
+
+          <p className="mt-2 text-xs italic text-neutral-400/90">
+            Nota: 0% YouTube, 100% MP4 local (sin anuncios, sin sustos).
+          </p>
         </header>
 
         <ClipsSection clips={clips} />

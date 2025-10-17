@@ -62,6 +62,26 @@ export default function GatitosPage() {
             roles (owner/admin/user). Stack: Next.js 15, TypeScript, Tailwind,
             NextAuth y MongoDB/Mongoose.
           </p>
+
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-300">
+            Me gusto la idea de crear este proyecto full-stack para practicar{" "}
+            <strong>UI→API→BD→auth</strong> con un caso real. Incluye{" "}
+            <strong>panel admin</strong> con{" "}
+            <strong>tabla de solicitantes</strong> (contacto, gato, fecha) y{" "}
+            <strong>edición de gatos</strong> (CRUD/estado). Stack:{" "}
+            <strong>Next.js/TS + Tailwind</strong>,
+            <strong> NextAuth (roles)</strong>, <strong>MongoDB</strong> en{" "}
+            <strong>Vercel</strong>. Aprendí
+            <strong> modelado de datos</strong>,{" "}
+            <strong>API Routes/Server Actions</strong>, gestión por permisos y
+            accesibilidad.
+          </p>
+
+          <p className="mt-2 text-xs italic text-neutral-400/90">
+            Los gatos de las fotos son míos o de mis amigas. Ningún modelo
+            felino fue sobornado (mucho).
+          </p>
+          <br />
         </header>
 
         <ClipsSection clips={clips} />
@@ -73,7 +93,7 @@ export default function GatitosPage() {
 function ClipsSection({ clips }: { clips: Clip[] }) {
   return (
     <section className="mt-8">
-      <h2 className="text-xl md:text-2xl font-semibold">
+      <h2 className="text-xl md:text-3xl font-semibold">
         🎥 Clips explicativos
       </h2>
       <p className="mt-1 text-sm text-neutral-400">

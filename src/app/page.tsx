@@ -12,7 +12,8 @@ export default function HomePage() {
           </h1>
           <p className="mt-4 max-w-2xl text-lg text-neutral-300">
             Desarrolladora <span className="text-pink-300">Fullstack</span>{" "}
-            especializada en <span className="text-pink-300">React</span>,{" "}
+            especializada en <span className="text-pink-300">Python</span>,{" "}
+            <span className="text-pink-300">React</span>,{" "}
             <span className="text-pink-300">Next.js</span> y{" "}
             <span className="text-pink-300">TypeScript</span>. Me encanta crear
             UIs limpias, rápidas y accesibles.
