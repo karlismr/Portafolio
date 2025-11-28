@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "Asistente personal — (En curso)",
   description:
@@ -17,16 +19,14 @@ export default function AsistentePage() {
     {
       id: "asistente-flujo",
       title: "Flujo: notas, tareas y recordatorios",
-      summary:
-        "Demostración del flujo principal de creación/edición y cómo se guardan en MongoDB con validaciones.",
+      summary: "En proceso",
       src: "/videos/asistente-flujo.mp4",
       poster: "/videos/asistente-flujo.jpg",
     },
     {
       id: "asistente-memoria",
       title: "Memoria conversacional",
-      summary:
-        "Estrategia de memoria (resúmenes + slots clave) para personalizar respuestas y reducir tokens.",
+      summary: "En proceso",
       src: "/videos/asistente-memoria.mp4",
       poster: "/videos/asistente-memoria.jpg",
     },
@@ -41,24 +41,44 @@ export default function AsistentePage() {
             En curso
           </span>
           <h1 className="text-2xl md:text-3xl font-bold">Asistente personal</h1>
+          <br />
           <p className="max-w-3xl text-neutral-300">
-            PWA estilo chat: notas, tareas y recordatorios con memoria
-            persistente y tono configurable. Frontend y backend con
-            Python/Django.
+            Estoy creando un <strong>asistente con interfaz estilo chat</strong>{" "}
+            donde puedas conversar como si fuese una persona (p. ej.{" "}
+            <strong>familiar</strong> o <strong>amigo</strong>). Ya tengo{" "}
+            <strong>el chat funcionando</strong> y está
+            <strong> conectado a IA en tiempo real</strong> para responder según
+            el contexto.
           </p>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-300">
-            Quiero crear un{" "}
-            <strong>asistente tipo chat (estilo WhatsApp)</strong> donde puedas
-            elegir con quién “hablas” (p. ej., <strong>familiar</strong> o{" "}
-            <strong>novia</strong>) y que te haga
-            <strong> recordatorios</strong>, te dé <strong>seguimiento</strong>{" "}
-            y verifique que cumpliste lo que dijiste (tareas, salidas, citas).
-            Con este proyecto busco profundizar en <strong>Django</strong> y
-            aprender <strong>IA aplicada</strong>: <em>NLP básico</em> para
-            detectar intención, extraer fechas/horas, ajustar el{" "}
-            <em>tono/persona</em> de la respuesta y priorizar recordatorios de
-            forma inteligente.
+            Actualmente estoy construyendo lo que más me emociona:
+            <strong> llamadas a función (Function Calling)</strong> para que el
+            asistente pueda{" "}
+            <strong>guardar recordatorios y tareas en la base de datos</strong>{" "}
+            y más adelante{" "}
+            <strong>enviarte notificaciones cuando llegue el momento</strong>.
+            Mi objetivo es que pueda <strong> recordar cosas por ti</strong>,
+            dar
+            <strong> seguimiento</strong> y preguntarte si cumpliste lo que
+            dijiste; como un compañero que <strong>no olvida nada</strong>.
+            <br />
+            <br />
+            Este proyecto me está ayudando a profundizar en
+            <strong> Django, PWA</strong> e{" "}
+            <strong>
+              integración con IA real aplicada a problemas cotidianos
+            </strong>
           </p>
+          <div>
+            <Image
+              src="/llamadaafuncion.png"
+              alt="Llamada a función"
+              width={600}
+              height={400}
+              className="rounded-xl shadow-lg object-cover mx-auto"
+            ></Image>
+          </div>
+          <br />
         </header>
 
         <ClipsSection clips={clips} />
