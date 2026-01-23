@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navbar from "@/app/components/Navbar";
 
@@ -113,6 +114,7 @@ export default function RootLayout({
 
         <main className="relative mx-auto max-w-6xl px-4">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
