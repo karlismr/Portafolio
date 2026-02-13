@@ -1,9 +1,9 @@
-import Image from "next/image";
+// import Image from "next/image"; 
 
 export const metadata = {
-  title: "Asistente personal — (En curso)",
+  title: "Asistente personal — (Publicado)",
   description:
-    "Asistente tipo chat con notas, tareas, recordatorios y memoria conversacional. Python (Django/FastAPI).",
+    "Asistente tipo chat con tareas, recordatorios, memoria conversacional y personalidad ajustable,. Python (Django/FastAPI).",
 };
 
 type Clip = {
@@ -18,15 +18,15 @@ export default function AsistentePage() {
   const clips: Clip[] = [
     {
       id: "asistente-flujo",
-      title: "Flujo: notas, tareas y recordatorios",
-      summary: "En proceso",
+      title: "Configuración de Identidad y Perfil Dinámico",
+      summary: "En este clip muestro el proceso de autenticación y personalización del asistente. A través de un formulario conectado a una base de datos SQLite, el usuario puede definir la personalidad única de su IA. Aquí vemos cómo las instrucciones de sistema se actualizan en tiempo real para transformar el tono y comportamiento del modelo Gemini, permitiendo una experiencia totalmente a medida.",
       src: "/videos/asistente-flujo.mp4",
       poster: "/videos/asistente-flujo.jpg",
     },
     {
       id: "asistente-memoria",
-      title: "Memoria conversacional",
-      summary: "En proceso",
+      title: "Interacción Inteligente y Notificaciones Multiplataforma",
+      summary: "Demostración del flujo de trabajo completo: desde la creación de un recordatorio mediante lenguaje natural en el chat, hasta la ejecución de la tarea programada (Cronjob). El video captura el momento exacto en que el servidor procesa la tarea pendiente y dispara una notificación push automática a Telegram, manteniendo al usuario informado incluso fuera de la aplicación web.",
       src: "/videos/asistente-memoria.mp4",
       poster: "/videos/asistente-memoria.jpg",
     },
@@ -43,41 +43,34 @@ export default function AsistentePage() {
           <h1 className="text-2xl md:text-3xl font-bold">Asistente personal</h1>
           <br />
           <p className="max-w-3xl text-neutral-300">
-            Estoy creando un <strong>asistente con interfaz estilo chat</strong>{" "}
-            donde puedas conversar como si fuese una persona (p. ej.{" "}
-            <strong>familiar</strong> o <strong>amigo</strong>). Ya tengo{" "}
-            <strong>el chat funcionando</strong> y está
-            <strong> conectado a IA en tiempo real</strong> para responder según
-            el contexto.
+           Desarrollé una <strong>aplicación web integral</strong> que funciona
+            como un <strong>asistente personal inteligente </strong>
+             que por defecto se comporta como <strong>Satoru Gojo
+              (un personaje de anime)</strong>, o 
+              <strong>personalizar quien quieres que sea</strong>). , utilizando
+             el <strong>modelo Gemini 1.5 Flash de Google</strong>{" "}
           </p>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-300">
-            Actualmente estoy construyendo lo que más me emociona:
-            <strong> llamadas a función (Function Calling)</strong> para que el
-            asistente pueda{" "}
-            <strong>guardar recordatorios y tareas en la base de datos</strong>{" "}
-            y más adelante{" "}
-            <strong>enviarte notificaciones cuando llegue el momento</strong>.
-            Mi objetivo es que pueda <strong> recordar cosas por ti</strong>,
-            dar
-            <strong> seguimiento</strong> y preguntarte si cumpliste lo que
-            dijiste; como un compañero que <strong>no olvida nada</strong>.
-            <br />
-            <br />
-            Este proyecto me está ayudando a profundizar en
-            <strong> Django, PWA</strong> e{" "}
-            <strong>
-              integración con IA real aplicada a problemas cotidianos
-            </strong>
+           💟<strong>Personalización Dinámica:</strong> Implementé un sistema donde el 
+           usuario puede definir la *personalidad* del asistente en la base de datos,
+            la cual se inyecta en las instrucciones de sistema de la IA en tiempo real.
+            💟<strong>Gestión de Recordatorios:</strong> Sistema completo de CRUD para 
+            recordatorios, permitiendo al asistente ayudar en la organización diaria del usuario.
+            💟<strong>Notificaciones Externas (Telegram): </strong>Integración con la API de 
+            Telegram mediante un Bot y Comandos de Gestión de Django para enviar notificaciones
+             push al dispositivo móvil cuando un recordatorio vence.
+             💟<strong>Arquitectura de Servidor: </strong>Configuración de Cron Jobs para la ejecución
+              automatizada de tareas en segundo plano y despliegue exitoso en la nube (Render).
+              💟<strong>Stack Tecnológico: </strong>Python, Django, PostgreSQL, Google Generative
+               AI SDK, Telegram API y CSS responsivo.
+               <br></br>
+               <br></br>
+               El sistema no solo responde mensajes, sino que *sale* de la web para notificar al usuario 
+               en sus dispositivos personales, resolviendo el problema de la asincronía en aplicaciones
+                web tradicionales.
+
           </p>
-          <div>
-            <Image
-              src="/llamadaafuncion.png"
-              alt="Llamada a función"
-              width={600}
-              height={400}
-              className="rounded-xl shadow-lg object-cover mx-auto"
-            ></Image>
-          </div>
+    
           <br />
         </header>
 
