@@ -63,7 +63,7 @@ function ProjectsSection() {
         "Asistente tipo chat con notas, tareas, recordatorios y memoria. PWA con Next.js + backend en Python (Django/FastAPI).",
       href: "/proyectos/asistente",
       image: "/shinji.jpg",
-      status: "En curso",
+      status: "Publicado",
     },
   ];
 
