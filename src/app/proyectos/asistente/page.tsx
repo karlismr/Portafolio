@@ -37,8 +37,8 @@ export default function AsistentePage() {
       <div className="mx-auto max-w-6xl px-4">
         <header className="mb-6 space-y-2">
           <span className="inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-neutral-300">
-            <span className="size-1.5 rounded-full bg-yellow-400" />
-            En curso
+            <span className="size-1.5 rounded-full bg-green-400" />
+            Publicado
           </span>
           <h1 className="text-2xl md:text-3xl font-bold">Asistente personal</h1>
           <br />
@@ -46,10 +46,11 @@ export default function AsistentePage() {
            Desarrollé una <strong>aplicación web integral</strong> que funciona
             como un <strong>asistente personal inteligente </strong>
              que por defecto se comporta como <strong>Satoru Gojo
-              (un personaje de anime)</strong>, o 
-              <strong>personalizar quien quieres que sea</strong>). , utilizando
+              (un personaje de anime)</strong>, o puedes
+              <strong>personalizar el comportamiento del asistente</strong>), utilizando
              el <strong>modelo Gemini 1.5 Flash de Google</strong>{" "}
           </p>
+          <br></br>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-neutral-300">
            💟<strong>Personalización Dinámica:</strong> Implementé un sistema donde el 
            usuario puede definir la *personalidad* del asistente en la base de datos,
