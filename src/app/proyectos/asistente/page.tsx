@@ -47,7 +47,7 @@ export default function AsistentePage() {
             como un <strong>asistente personal inteligente </strong>
              que por defecto se comporta como <strong>Satoru Gojo
               (un personaje de anime)</strong>, o puedes
-              <strong>personalizar el comportamiento del asistente</strong>), utilizando
+              <strong> personalizar el comportamiento del asistente</strong>), utilizando
              el <strong>modelo Gemini 1.5 Flash de Google</strong>{" "}
           </p>
           <br></br>
