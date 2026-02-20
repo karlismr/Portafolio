@@ -54,13 +54,17 @@ export default function AsistentePage() {
            💟<strong>Personalización Dinámica:</strong> Implementé un sistema donde el 
            usuario puede definir la *personalidad* del asistente en la base de datos,
             la cual se inyecta en las instrucciones de sistema de la IA en tiempo real.
+            <br></br>
             💟<strong>Gestión de Recordatorios:</strong> Sistema completo de CRUD para 
             recordatorios, permitiendo al asistente ayudar en la organización diaria del usuario.
+            <br></br>
             💟<strong>Notificaciones Externas (Telegram): </strong>Integración con la API de 
             Telegram mediante un Bot y Comandos de Gestión de Django para enviar notificaciones
              push al dispositivo móvil cuando un recordatorio vence.
+             <br></br>
              💟<strong>Arquitectura de Servidor: </strong>Configuración de Cron Jobs para la ejecución
               automatizada de tareas en segundo plano y despliegue exitoso en la nube (Render).
+              <br></br>
               💟<strong>Stack Tecnológico: </strong>Python, Django, PostgreSQL, Google Generative
                AI SDK, Telegram API y CSS responsivo.
                <br></br>
